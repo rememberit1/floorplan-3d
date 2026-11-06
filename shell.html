@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Apartment 3D Walkthrough</title><style>
+html,body{margin:0;height:100%;overflow:hidden;font-family:system-ui,sans-serif;background:#111}canvas{display:block;touch-action:none}
+#hud{position:fixed;left:12px;top:12px;color:#fff}#mode{font-weight:700;font-size:15px;background:rgba(15,18,28,.8);padding:6px 10px;border-radius:8px;display:inline-block}
+#room{margin-top:6px;font-size:13px;background:rgba(15,18,28,.6);padding:4px 10px;border-radius:8px;display:inline-block}#room:empty{display:none}
+#help{position:fixed;left:12px;bottom:12px;color:#eee;background:rgba(15,18,28,.82);padding:10px 14px;border-radius:10px;font-size:13px;line-height:1.55;max-width:320px}
+#help.hide{display:none}#help b{color:#ffd166}kbd{background:#333;border-radius:4px;padding:1px 5px;font-size:12px}
+#mm{position:fixed;right:12px;top:12px;border-radius:10px;border:1px solid #444}
+#modeBtn{position:fixed;right:12px;top:160px;width:196px;padding:9px;border:0;border-radius:8px;background:#ffd166;font-weight:700;cursor:pointer}
+#touch{display:none}#stick{position:fixed;left:30px;bottom:30px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.4)}
+#knob{position:absolute;left:35px;top:35px;width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,.6)}
+#cross{position:fixed;left:50%;top:50%;width:6px;height:6px;margin:-3px;border-radius:50%;background:rgba(255,255,255,.7)}
+</style></head><body>
+<div id="hud"><div id="mode"></div><br><div id="room"></div></div>
+<canvas id="mm" width="196" height="140"></canvas><button id="modeBtn"></button><div id="cross"></div>
+<div id="help"><b>2 Bed / 1 Bath · ~963 sq ft</b><br>
+Click the view to look around with the mouse (<kbd>Esc</kbd> releases)<br><kbd>W A S D</kbd>/arrows move · <kbd>Shift</kbd> run<br>
+<kbd>O</kbd>/<kbd>Tab</kbd> walk ⇄ dollhouse · drag + wheel to orbit<br><kbd>L</kbd> labels · <kbd>H</kbd> hide help<br>
+<span style="opacity:.7">Touch: left stick moves, drag elsewhere to look</span></div>
+<div id="touch"><div id="stick"><div id="knob"></div></div></div>
+<script>/*THREE*/</script><script>/*APP*/</script></body></html>
